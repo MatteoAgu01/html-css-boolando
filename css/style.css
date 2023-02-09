@@ -3,32 +3,35 @@
      margin: 0;
      padding: 0;
 }
-header{
-     width: 100%;
-     display: flex;
-     background-color: #ff6900;
-     position: fixed;
-     position: relative;
+
+header a{
+     text-decoration: none;
+     color: white;
 }
+header::after{
+}
+
 .logo{
      width: 150px;
      padding-top: 2px;
 }
 
 .orange-fixed{
+     width: 100%;
+     background-color: #ff6900;
      display: flex;
      justify-content: space-around;
      align-items: center;
      align-content: center;
+     position: fixed;
 }
 
 
 .top,
 .bot{
-     border: 1px solid black;
-     max-width: 1200px;
+     max-width: 1400px;
      margin: 0 auto;
-     padding: 2%;
+     padding: 3%;
      display: flex;
      justify-content: space-around;
 }
@@ -59,7 +62,7 @@ header{
 
 .container{
      position: relative;
-     width: calc( 100% / 3.5 );
+     width: calc( 100% / 3 );
 }
 
 .container:hover i{
@@ -72,5 +75,39 @@ header{
 
 picture{
      display: flex;
-     justify-content: center
+     justify-content: center;
+}
+
+.price{
+     position: absolute;
+     bottom: 15%;
+     left: 25%;
+     font-size: 1rem;
+     color: white ;
+}
+
+.eco{
+     background-color: #008000;
+     padding: 1px;
+}
+
+.discount{
+     background-color: red;
+     padding: 1px;
+}
+
+.info{
+     font-size: 0.8rem;
+     position: absolute;
+     left: 25%;
+}
+
+
+.coast{
+     color: red;
+}
+
+.full{
+
+     color: black;
 }
