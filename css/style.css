@@ -4,14 +4,21 @@
      padding: 0;
 }
 
+/* general */
+picture{
+     display: flex;
+     justify-content: center;
+}
 
 header a{
      text-decoration: none;
      color: white;
 }
-header::after{
-}
 
+/* //general */
+
+
+/* header style */
 .logo{
      width: 150px;
      padding-top: 2px;
@@ -27,8 +34,10 @@ header::after{
      position: fixed;
      z-index: 1;
 }
+/* //header style */
 
 
+/* cards */
 .top,
 .bot{
      max-width: 1400px;
@@ -36,30 +45,6 @@ header::after{
      padding: 3%;
      display: flex;
      justify-content: space-around;
-}
-
-.img-front,
-.img-back{
-     width: 50%;
-}
-
-.img-back{
-     display: none;
-}
-
-
-.container:hover .img-front{
-     display: none;
-}
-
-.container:hover .img-back{
-     display: block;
-}
-
-.fa-sharp{
-     position: absolute;
-     top: 2%;
-     right: 30%;
 }
 
 .container{
@@ -75,9 +60,27 @@ header::after{
      width: 16px;
 }
 
-picture{
-     display: flex;
-     justify-content: center;
+.img-front,
+.img-back{
+     width: 50%;
+}
+
+.img-back{
+     display: none;
+}
+
+.container:hover .img-front{
+     display: none;
+}
+
+.container:hover .img-back{
+     display: block;
+}
+
+.fa-sharp{
+     position: absolute;
+     top: 2%;
+     right: 30%;
 }
 
 .price{
@@ -113,3 +116,5 @@ picture{
 
      color: black;
 }
+
+/* //cards */
